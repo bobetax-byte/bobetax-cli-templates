@@ -12,8 +12,7 @@
   "autor":"<%=author%>",
   "description": "<%=description%>",
   "devDependencies": {
-    "@vue/cli-service": "^3.11.0",
-    "vue-template-compiler": "^2.6.10"
+    "axios": "^0.21.1"
   },
   "license": "<%=license%>"
 }
