@@ -8,12 +8,12 @@
     message: 'This is a private registry?'
   },
   {
-    type: 'confirm',
+    type: 'input',
     name: 'author',
     message: "what's your author name"
   },
   {
-    type: 'confirm',
+    type: 'input',
     name: 'description',
     message: "what's your description"
   }
