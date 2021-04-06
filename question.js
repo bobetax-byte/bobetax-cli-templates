@@ -16,5 +16,11 @@
     type: 'input',
     name: 'description',
     message: "what's your description"
+  },
+  {
+    type: 'list',
+    choices: ['MIT', 'apache-2.0'],
+    name: 'license',
+    message: "what's your description"
   }
 ]
