@@ -9,6 +9,12 @@ module.exports = [
   },
   {
     type: "input",
+    name: "version",
+    message: "what's your project's version?",
+    default: "1.0.0",
+  },
+  {
+    type: "input",
     name: "author",
     message: "what's your author name",
   },
