@@ -5,6 +5,7 @@
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 const cdn = require("./config/cdn");
+const { name } = require("./package.json")
 
 const isProduction = process.env.NODE_ENV === "production";
 const isDev = process.env.NODE_ENV === "development";
@@ -40,7 +41,7 @@ module.exports = {
   productionSourceMap: false,
   devServer,
   configureWebpack: {
-    name: "name",
+    name,
     resolve: {
       alias: {
         "@": resolve("src"),
@@ -77,11 +78,6 @@ module.exports = {
   transpileDependencies: [],
   // webpack 操作
   chainWebpack(config) {
-    config.plugin("html").tap((opt) => {
-      opt.cdn = cdn;
-      return opt;
-    });
-
     // config.module
     //   .rule("vue")
     //   .loader("vue-loader")
@@ -95,6 +91,7 @@ module.exports = {
     config.when(process.env.NODE_ENV !== "development", (config) => {
       config.plugin("html").tap((opt) => {
         opt[0].cdn = cdn;
+        opt[0].title = name;
         return opt;
       });
 
