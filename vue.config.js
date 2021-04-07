@@ -5,7 +5,7 @@
 const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 const cdn = require("./config/cdn");
-const { name } = require("./package.json")
+const { name } = require("./package.json");
 
 const isProduction = process.env.NODE_ENV === "production";
 const isDev = process.env.NODE_ENV === "development";

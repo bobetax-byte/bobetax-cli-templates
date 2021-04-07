@@ -1,6 +1,5 @@
 import axios from "axios";
-import qs from "qs";
-// import store from "./store/index";
+import store from "./store/index";
 
 // 超时时间
 const TIMEOUT = 5000;
@@ -14,7 +13,7 @@ let service = axios.create({
 // request拦截
 service.interceptors.request.use(
   (config) => {
-    console.log('config', config)
+    console.log("config", config);
     // token 拦截
     // do something before request is sent
     // let token = "token";

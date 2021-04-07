@@ -17,6 +17,7 @@ devDependencies:
   eslint-plugin-vue: 6.2.2_eslint@6.8.0
   html-webpack-plugin: 3.2.0_webpack@4.46.0
   prettier: 2.2.1
+  regenerator-runtime: 0.13.7
   script-ext-html-webpack-plugin: 2.1.5_502c618fc8a7d35df07e93275324a2d0
   terser-webpack-plugin: 4.2.3_webpack@4.46.0
   vue-template-compiler: 2.6.12
@@ -9336,6 +9337,7 @@ specifiers:
   html-webpack-plugin: 3.2.0
   prettier: ^2.2.1
   qs: ^6.10.1
+  regenerator-runtime: ^0.13.7
   script-ext-html-webpack-plugin: ^2.1.5
   terser-webpack-plugin: ^4.2.3
   vue: ^2.6.11

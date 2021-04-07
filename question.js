@@ -29,4 +29,9 @@ module.exports = [
     name: "license",
     message: "what's your description",
   },
+  {
+    type: "confirm",
+    name: "compatibility",
+    message: "Compatible with IE?",
+  },
 ];
