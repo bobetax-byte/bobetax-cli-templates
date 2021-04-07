@@ -78,15 +78,6 @@ module.exports = {
   transpileDependencies: [],
   // webpack 操作
   chainWebpack(config) {
-    // config.module
-    //   .rule("vue")
-    //   .loader("vue-loader")
-    //   .tap((option) => {
-    //     option.compilerOptions.preserveWhitesSpace = true;
-    //     return option;
-    //   })
-    //   .end();
-
     // 生产代码切包
     config.when(process.env.NODE_ENV !== "development", (config) => {
       config.plugin("html").tap((opt) => {
