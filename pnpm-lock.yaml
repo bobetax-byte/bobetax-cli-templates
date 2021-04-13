@@ -12,6 +12,7 @@ devDependencies:
   '@vue/cli-service': 4.5.12_vue-template-compiler@2.6.12
   '@vue/eslint-config-prettier': 6.0.0_2bcfefa13ee2fceeed8e5df7aad481db
   babel-eslint: 10.1.0_eslint@6.8.0
+  compression-webpack-plugin: 5.0.1_webpack@4.46.0
   eslint: 6.8.0
   eslint-plugin-prettier: 3.3.1_eslint@6.8.0+prettier@2.2.1
   eslint-plugin-vue: 6.2.2_eslint@6.8.0
@@ -2847,6 +2848,21 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-AF3r7P5dWxL8MxyITRMlORQNaOA2IkAFaTr4k7BUumjPtRpGDTZpl0Pb1XCO6JeDCBdp126Cgs9sMxqSjgYyRg==
+  /compression-webpack-plugin/5.0.1_webpack@4.46.0:
+    dependencies:
+      cacache: 15.0.6
+      find-cache-dir: 3.3.1
+      schema-utils: 2.7.1
+      serialize-javascript: 4.0.0
+      webpack: 4.46.0
+      webpack-sources: 1.4.3
+    dev: true
+    engines:
+      node: '>= 10.13.0'
+    peerDependencies:
+      webpack: ^4.0.0 || ^5.0.0
+    resolution:
+      integrity: sha512-Wcb99O4UkdDZiM+blEw6h+cUfJYCn2kgK0l3fjLOm72Stso9DVMieQpBD4PVpyI7DLL6+zNh0iJV3p4HDwTinQ==
   /compression/1.7.4:
     dependencies:
       accepts: 1.3.7
@@ -9330,6 +9346,7 @@ specifiers:
   '@vue/eslint-config-prettier': ^6.0.0
   axios: ^0.21.1
   babel-eslint: ^10.1.0
+  compression-webpack-plugin: 5.0.1
   core-js: ^3.6.5
   eslint: ^6.7.2
   eslint-plugin-prettier: ^3.3.1
