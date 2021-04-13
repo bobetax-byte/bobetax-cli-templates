@@ -6,6 +6,7 @@ const path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 const cdn = require("./config/cdn");
 const { name } = require("./package.json");
+const compressionWebpackPlugin = require("compression-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV === "production";
 const isDev = process.env.NODE_ENV === "development";
@@ -121,6 +122,8 @@ module.exports = {
       });
       // https:// webpack.js.org/configuration/optimization/#optimizationruntimechunk
       config.optimization.runtimeChunk("single");
+      // add gzip 支持
+      config.plugin("compressionWebpackPlugin").use(compressionWebpackPlugin);
     });
   },
 };
