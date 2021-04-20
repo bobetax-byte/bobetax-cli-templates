@@ -1,5 +1,5 @@
 import axios from "axios";
-import store from "./store/index";
+import store from "@/store/index";
 
 // 超时时间
 const TIMEOUT = 5000;
