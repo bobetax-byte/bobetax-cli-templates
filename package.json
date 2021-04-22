@@ -1,6 +1,20 @@
 {
-  "name": "vue3-ts",
-  "version": "0.0.0",
+	"name": "<%=name%>",
+  "version": "<%=version%>",
+  "private": "<%=private%>",
+  "author": "<%=author%>",
+  "description": "<%=description%>",
+  "license": "<%=license%>",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
