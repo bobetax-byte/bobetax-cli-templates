@@ -1,0 +1,11 @@
+.product-icon{
+    @include size(16px);
+    margin-right: 4px;
+}
+
+// 银行logo 带边框 兼容旧版，以上暂不删除
+.icon-bank{
+  border-radius: 4px;
+  overflow: hidden;
+  @include onePxBorder($borderColor);
+}
