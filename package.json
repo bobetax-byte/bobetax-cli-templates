@@ -1,5 +1,5 @@
 {
-	"name": "<%=name%>",
+  "name": "<%=name%>",
   "version": "<%=version%>",
   "private": "<%=private%>",
   "author": "<%=author%>",
@@ -21,6 +21,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "vue": "^3.0.5",
     "vue-router": "4",
     "vuex": "^4.0.0"
